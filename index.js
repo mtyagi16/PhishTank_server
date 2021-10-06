@@ -11,8 +11,8 @@ const database = new Datastore('database.db');
 app.use(express.static('public'));
 app.use(express.json());
 database.loadDatabase();
-let url = "http://data.phishtank.com/data/online-valid.json";
-//let url="https://api.github.com/users/hadley/orgs";
+//let url = "http://data.phishtank.com/data/online-valid.json";
+let url="https://api.github.com/users/hadley/orgs";
 let array=[];
 async function getdata()
 {
